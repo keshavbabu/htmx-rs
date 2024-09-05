@@ -1,6 +1,6 @@
 [package]
 name = "typed-htmx-macros"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2018"
 authors = ["Axo Developer Co <hello@axo.dev>", "Bodil Stokke <bodil@bodil.org>"]
 build = "build.rs"
