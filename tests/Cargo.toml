@@ -1,16 +1,16 @@
 [package]
-name = "axohtml-tests"
+name = "typed-htmx-tests"
 version = "0.0.0"
 edition = "2021"
-authors = ["Bodil Stokke <bodil@bodil.org>"]
+authors = ["Bodil Stokke <bodil@bodil.org>", "Keshav Babu <me@keshavbabu.com>"]
 publish = false
 
 [[bin]]
-name = "axohtml-tests"
+name = "typed-htmx-tests"
 path = "main.rs"
 
 [dev-dependencies]
 compiletest_rs = { version = "0.7", features = ["stable"] }
-axohtml = { path = "../typed-html" }
-axohtml-macros = { path = "../macros" }
+typed-htmx = { path = "../typed-htmx" }
+typed-htmx-macros = { path = "../macros" }
 version_check = "0.9.1"

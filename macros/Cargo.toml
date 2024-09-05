@@ -1,5 +1,5 @@
 [package]
-name = "axohtml-macros"
+name = "typed-htmx-macros"
 version = "0.5.0"
 edition = "2018"
 authors = ["Axo Developer Co <hello@axo.dev>", "Bodil Stokke <bodil@bodil.org>"]

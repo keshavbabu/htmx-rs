@@ -5,7 +5,7 @@
 use crate::dom::{Node, TextNode, UnsafeTextNode};
 use crate::types::*;
 use crate::OutputType;
-use axohtml_macros::declare_elements;
+use typed_htmx_macros::declare_elements;
 
 // Marker traits for element content groups
 
@@ -170,6 +170,8 @@ declare_elements! {
         action: Uri,
         autocomplete: OnOff,
         enctype: FormEncodingType,
+        hxpost: Bool,
+        hxswap: Bool,
         method: FormMethod,
         name: Id,
         novalidate: Bool,
@@ -455,7 +457,7 @@ declare_elements! {
 
 #[test]
 fn test_data_attributes() {
-    use crate as axohtml;
+    use crate as typed_htmx;
     use crate::{dom::DOMTree, html};
 
     let frag: DOMTree<String> = html!(<div data-id="1234">"Boo!"</div>);
@@ -464,7 +466,7 @@ fn test_data_attributes() {
 }
 #[test]
 fn test_meta_tags() {
-    use crate as axohtml;
+    use crate as typed_htmx;
     use crate::{dom::DOMTree, html};
 
     let frag: DOMTree<String> = html!(<meta property="og:url" content="http://example.com"/>
@@ -478,7 +480,7 @@ fn test_meta_tags() {
 
 #[test]
 fn test_aria() {
-    use crate as axohtml;
+    use crate as typed_htmx;
     use crate::{dom::DOMTree, html};
 
     let frag: DOMTree<String> = html!(<div aria_hidden="true" aria_label="hello" />
@@ -492,7 +494,7 @@ fn test_aria() {
 
 #[test]
 fn test_js() {
-    use crate as axohtml;
+    use crate as typed_htmx;
     use crate::{dom::DOMTree, html, unsafe_text};
 
     let frag: DOMTree<String> = html!(<script>{unsafe_text!("console.log('{}')", "sup")}</script>);
@@ -502,7 +504,7 @@ fn test_js() {
 
 #[test]
 fn test_twitter_cards() {
-    use crate as axohtml;
+    use crate as typed_htmx;
     use crate::{dom::DOMTree, html};
 
     let frag: DOMTree<String> = html!(<meta name="twitter:card" content="summary_large_image"/>);

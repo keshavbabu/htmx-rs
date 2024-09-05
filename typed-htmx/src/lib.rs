@@ -186,7 +186,7 @@ pub extern crate htmlescape;
 
 use std::fmt::Display;
 
-pub use axohtml_macros::html;
+pub use typed_htmx_macros::html;
 
 pub mod dom;
 pub mod elements;
