@@ -1,4 +1,6 @@
-# axohtml
+# html-rs
+
+**This is a fork of [axohtml](https://github.com/axodotdev/axohtml?tab=readme-ov-file) that i made to use htmx attributes on the html nodes**
 
 [![Github Actions Rust](https://github.com/axodotdev/axohtml/actions/workflows/rust.yml/badge.svg)](https://github.com/axodotdev/axohtml/actions)
 [![crates.io](https://img.shields.io/crates/v/axohtml.svg)](https://crates.io/crates/axohtml)
