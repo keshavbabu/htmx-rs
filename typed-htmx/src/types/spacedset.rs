@@ -14,7 +14,7 @@ use std::str::FromStr;
 ///
 /// ```
 /// # use std::convert::{TryFrom, TryInto};
-/// use axohtml::types::{Class, SpacedSet};
+/// use typed_htmx::types::{Class, SpacedSet};
 ///
 /// # fn main() -> Result<(), &'static str> {
 /// let classList: SpacedSet<Class> = "foo bar baz".try_into()?;

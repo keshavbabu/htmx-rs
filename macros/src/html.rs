@@ -23,7 +23,7 @@ impl Node {
             Node::Element(el) => el.into_token_stream(ty),
             Node::Text(text) => {
                 let text = TokenTree::Literal(text);
-                Ok(quote!(Box::new(typed-htmx::dom::TextNode::new(#text.to_string()))))
+                Ok(quote!(Box::new(typed_htmx::dom::TextNode::new(#text.to_string()))))
             }
             Node::Block(group) => {
                 let span = group.span();
@@ -274,12 +274,12 @@ impl Element {
         let mut type_annotation = TokenStream::new();
         if let Some(ty) = ty {
             let type_var = to_stream(ty.clone());
-            type_annotation.extend(quote!(: typed-htmx::elements::#typename<#type_var>));
+            type_annotation.extend(quote!(: typed_htmx::elements::#typename<#type_var>));
         }
 
         Ok(quote!(
             {
-                let mut element #type_annotation = typed-htmx::elements::#typename::new(#args);
+                let mut element #type_annotation = typed_htmx::elements::#typename::new(#args);
                 #body
                 Box::new(element)
             }

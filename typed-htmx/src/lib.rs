@@ -13,9 +13,9 @@
 //!
 //! ```
 //! # #![recursion_limit = "128"]
-//! # use axohtml::html;
-//! # use axohtml::dom::{DOMTree, VNode};
-//! # use axohtml::types::Metadata;
+//! # use typed_htmx::html;
+//! # use typed_htmx::dom::{DOMTree, VNode};
+//! # use typed_htmx::types::Metadata;
 //! # fn main() {
 //! let mut doc: DOMTree<String> = html!(
 //!     <html>
@@ -97,9 +97,9 @@
 //!
 //! ```
 //! # use std::convert::{TryFrom, TryInto};
-//! # use axohtml::html;
-//! # use axohtml::dom::DOMTree;
-//! # use axohtml::types::{Class, SpacedSet};
+//! # use typed_htmx::html;
+//! # use typed_htmx::dom::DOMTree;
+//! # use typed_htmx::types::{Class, SpacedSet};
 //! # fn main() -> Result<(), &'static str> {
 //! let classList: SpacedSet<Class> = ["foo", "bar", "baz"].try_into()?;
 //! # let doc: DOMTree<String> =
@@ -127,8 +127,8 @@
 //! ## Example
 //!
 //! ```
-//! # use axohtml::{html, text};
-//! # use axohtml::dom::DOMTree;
+//! # use typed_htmx::{html, text};
+//! # use typed_htmx::dom::DOMTree;
 //! # fn main() {
 //! # let doc: DOMTree<String> =
 //! html!(
@@ -154,8 +154,8 @@
 //! ensure you're not using any event handlers that can't be printed.
 //!
 //! ```
-//! # use axohtml::html;
-//! # use axohtml::dom::DOMTree;
+//! # use typed_htmx::html;
+//! # use typed_htmx::dom::DOMTree;
 //! # fn main() {
 //! let doc: DOMTree<String> = html!(
 //!     <p>"Hello Axo"</p>

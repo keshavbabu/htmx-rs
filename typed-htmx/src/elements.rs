@@ -5,7 +5,7 @@
 use crate::dom::{Node, TextNode, UnsafeTextNode};
 use crate::types::*;
 use crate::OutputType;
-use typed_htmx_macros::declare_elements;
+use typed_htmx_macros::{declare_elements, html};
 
 // Marker traits for element content groups
 

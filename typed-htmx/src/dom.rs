@@ -12,8 +12,8 @@ use htmlescape::encode_minimal;
 /// # Examples
 ///
 /// ```
-/// # use axohtml::html;
-/// # use axohtml::dom::DOMTree;
+/// # use typed_htmx::html;
+/// # use typed_htmx::dom::DOMTree;
 /// # fn main() {
 /// let tree: DOMTree<String> = html!(
 ///     <div class="hello">
@@ -143,7 +143,7 @@ pub struct UnsafeTextNode<T: OutputType + Send>(String, PhantomData<T>);
 ///
 /// This macro is useful for creating text macros inside code blocks that contain HTML
 /// that you do not want to be escaped. For example, if some other process renders Markdown
-/// to an HTML string and you want embed that HTML string in an axohtml template,
+/// to an HTML string and you want embed that HTML string in an typed_htmx: template,
 /// you may want to avoid escaping the tags in that HTML string.
 ///
 /// # Examples
