@@ -1,6 +1,6 @@
 [package]
 name = "typed-htmx"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2018"
 authors = ["Axo Developer Co <hello@axo.dev>", "Bodil Stokke <bodil@bodil.org>", "Keshav Babu <me@keshavbabu.com>"]
 license = "MPL-2.0+"
@@ -18,4 +18,4 @@ strum_macros = "0.24"
 mime = "0.3.17"
 language-tags = "0.3"
 htmlescape = "0.3.1"
-proc-macro-nested = "0.1.7g
+proc-macro-nested = "0.1.7"
